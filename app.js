@@ -47,7 +47,7 @@ let photos = {
           let x = Math.random() * 10;
           x = ~~x;
           if (x < 10) {
-            document.body.style.background = `url(${data.results[x].urls.regular})`;
+            document.body.style.background = `url(${data.results[x].urls.raw})`;
           }
         });
       })
@@ -102,3 +102,15 @@ let weather = {
     this.fetchWeather(document.querySelector(".search-bar").value);
   },
 };
+
+let button = document.querySelector(".btn-42");
+let searchBar = document.querySelector(".button");
+button.style.display = "none";
+function showButton() {
+  if (button.style.display == "none") {
+    button.style.display = "flex";
+  } else button.style.display = "none";
+}
+searchBar.addEventListener("click", () => {
+  button.style.display = "none";
+});
