@@ -17,7 +17,7 @@
   position: relative;
   overflow: hidden;
   border-radius: var(--border-radius);
-  box-shadow: 0 10px 30px rgba(65, 72, 86, 0.05);
+  box-shadow: 0 10px 30px #00000000;
   display: flex;
   justify-content: center;
   align-items: center;

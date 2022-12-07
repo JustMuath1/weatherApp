@@ -11,11 +11,12 @@ body {
 }
 .card {
   background-color: #000000d0 !important;
-  max-width: 30rem;
+  max-width: 30rem !important;
   color: white;
   z-index: 0;
 }
-.city-name {
+.city-name,
+.city-name-time {
   color: #4f29f0;
 }
 
@@ -82,3 +83,4 @@ body {
 .btn-42:active {
   top: 2px;
 }
+/* welcome input */
