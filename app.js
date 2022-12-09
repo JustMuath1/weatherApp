@@ -1,5 +1,5 @@
 // the default city and default data
-let city = "Riyadh"; // default city
+let city = "riyadh"; // default city
 window.addEventListener("load", () => {
   photos.search(city);
   weather.defaultSearch(city);
@@ -144,11 +144,12 @@ let time = {
     const dateTime = data.datetime.split(" ");
     const date = dateTime[0];
     let time = dateTime[1];
+    console.log(time);
     const timezone = data.timezone_location;
     console.log(date, this.convert24To12(time), timezone);
-    document.querySelector(".local-time").innerText = time;
+    document.querySelector(".local-time").innerText = this.convert24To12(time);
     document.querySelector(".date").innerText = "Today's Date: " + date;
-    document.querySelector(".timezone").innerText = "Time Zone" + timezone;
+    document.querySelector(".timezone").innerText = "Time Zone: " + timezone;
   },
   search: function () {
     this.fetchTime(document.querySelector(".search-bar").value);

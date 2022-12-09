@@ -27,9 +27,9 @@
 
 <body>
     <div class="container">
-        <div class="search mb-3">
+        <div class="search mb-3 mx-3">
             <div class="search search-icon">
-                <input type="text" placeholder="search" class="search-bar" />
+                <input type="text" placeholder="a city to search 😊" class="search-bar" />
                 <div class="symbol">
                     <svg class="cloud">
                         <use xlink:href="#cloud" />
@@ -60,15 +60,15 @@
             </svg>
         </div>
         <div class="d-flex justify-content-center">
-
-            <div class="card pt-3 mx-3" style="width: 90%;">
-                <div class="card-body p-3">
-                    <div class="weather">
-                        <h2 class="city card-title mt-3">
-                            Weather in <span class="city-name"></span>
+            <div class="flex-column">
+                <div class="card pt-3 mx-3" style="width: 90%;">
+                    <div class="card-body p-3">
+                        <div class="weather">
+                            <h2 class="city card-title mt-3">
+                                Weather in <span class="city-name"></span>
                         </h2>
                         <h1 class="temp card-subtitle mt-3">
-                            51° C
+
                         </h1>
                         <div class="flex">
                             <img src="https://openweathermap.org/img/wn/04n@2x.png" alt="" class="icon" height="50px">
@@ -80,16 +80,16 @@
                         <div class="wind"></div>
                     </div>
                 </div>
-
+                
             </div>
-            <div class="card  pt-3" style="width: 90%;">
+            <div class="card mx-3 my-3 pt-3" style="width: 90%;">
                 <div class="card-body p-3">
                     <div class="time">
                         <h2 class="city card-title mt-3">
                             Time in <span class="city-name-time">Riyadh</span>
                         </h2>
                         <h1 class="local-time card-subtitle mt-3">
-                            51° C
+
                         </h1>
                         <div class="flex">
                             <img src="" alt="" class="icon" height="50px">
@@ -104,11 +104,12 @@
 
             </div>
         </div>
+        </div>
     </div>
 
     <script src="app.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    
 </body>
 
 </html>

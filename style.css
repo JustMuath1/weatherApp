@@ -1,3 +1,4 @@
+/* !important used for overwrite the bootstrap defaults */
 body {
   display: flex;
   justify-content: center;
@@ -12,6 +13,7 @@ body {
 .card {
   background-color: #000000d0 !important;
   max-width: 30rem !important;
+  min-width: 23rem !important;
   color: white;
   z-index: 0;
 }
