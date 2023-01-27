@@ -8,3 +8,7 @@ weatherApp is a project that asks the user for a name of a city. The returns an 
 - Openweather api to get the weather data
 - abstractapi api to get the time and date data
 - HTML , CSS , JS
+ 
+ 
+ ** demo ** 
+ https://justmuath1.github.io/weatherApp/
